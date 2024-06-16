@@ -1,0 +1,146 @@
+[
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "холодильник",
+    "slug": "холодильник"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 2,
+  "fields": {
+    "name": "фотоаппарат",
+    "slug": "фотоаппарат"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 3,
+  "fields": {
+    "name": "утюг",
+    "slug": "утюг"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 4,
+  "fields": {
+    "name": "торшер",
+    "slug": "торшер"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 5,
+  "fields": {
+    "name": "телевизор",
+    "slug": "телевизор"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 6,
+  "fields": {
+    "name": "стиральная",
+    "slug": "стиральная"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 7,
+  "fields": {
+    "name": "машина",
+    "slug": "машина"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 8,
+  "fields": {
+    "name": "пылесос",
+    "slug": "пылесос"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 9,
+  "fields": {
+    "name": "наушники",
+    "slug": "наушники"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 10,
+  "fields": {
+    "name": "телефон",
+    "slug": "телефон"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 11,
+  "fields": {
+    "name": "печь",
+    "slug": "печь"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 12,
+  "fields": {
+    "name": "микроволновая",
+    "slug": "микроволновая"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 13,
+  "fields": {
+    "name": "кондиционер",
+    "slug": "кондиционер"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 14,
+  "fields": {
+    "name": "vacuum_cleaners",
+    "slug": "vacuum_cleaners"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 15,
+  "fields": {
+    "name": "микроволновка",
+    "slug": "микроволновка"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 16,
+  "fields": {
+    "name": "наушник",
+    "slug": "наушник"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 17,
+  "fields": {
+    "name": "машина_стиральная",
+    "slug": "машина_стиральная"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 18,
+  "fields": {
+    "name": "микроволновая_печь",
+    "slug": "микроволновая_печь"
+  }
+}
+]

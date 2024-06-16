@@ -1,0 +1,15 @@
+{% extends 'auth_app/base.html' %}
+
+{% block content %}
+    <div class="wrapper" style="width: 320px;">
+        <form method="post">
+            {% csrf_token %}
+            <div class="row">
+                <p>Истек срок действия ключа активации.</p>
+            </div>
+            <div>
+                <input type="submit" value="Отправить письмо с ключом активации повторно" />
+            </div>
+        </form>
+    </div>
+{% endblock %}

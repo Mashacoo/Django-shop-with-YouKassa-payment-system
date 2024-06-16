@@ -1,0 +1,50 @@
+[
+{
+  "model": "discounts_app.cartdiscount",
+  "pk": 3,
+  "fields": {
+    "created_at": "2024-03-25T09:39:39.012Z",
+    "updated_at": "2024-03-25T09:40:22.276Z",
+    "is_active": true,
+    "name": "Скидка 10% от 30 000 рублей:",
+    "description": "Скидка 10% при заказе от 10 000 рублей!",
+    "type_of_discount": "per",
+    "amount": "10.00",
+    "final_sum_min": 30000,
+    "final_sum_max": 1000000,
+    "products_quantity": 0
+  }
+},
+{
+  "model": "discounts_app.cartdiscount",
+  "pk": 4,
+  "fields": {
+    "created_at": "2024-03-25T09:40:11.652Z",
+    "updated_at": "2024-03-25T09:40:11.652Z",
+    "is_active": true,
+    "name": "Скидка 15% от 50 000 рублей",
+    "description": "Приобретите любые товары на сумму от 50 000 рублей и получите скидку 15%.",
+    "type_of_discount": "per",
+    "amount": "15.00",
+    "final_sum_min": 50000,
+    "final_sum_max": 1000000,
+    "products_quantity": 0
+  }
+},
+{
+  "model": "discounts_app.cartdiscount",
+  "pk": 5,
+  "fields": {
+    "created_at": "2024-03-25T09:40:51.602Z",
+    "updated_at": "2024-03-25T09:40:51.602Z",
+    "is_active": true,
+    "name": "Скидка 20% от 100 000 рублей:",
+    "description": "Приобретите любые товары на сумму от 70 000 рублей и получите скидку 20%.",
+    "type_of_discount": "per",
+    "amount": "20.00",
+    "final_sum_min": 100000,
+    "final_sum_max": 1000000,
+    "products_quantity": 0
+  }
+}
+]

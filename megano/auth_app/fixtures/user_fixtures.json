@@ -1,0 +1,115 @@
+[
+{
+  "model": "auth_app.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$sO5kdNvh2GcsyPNjUaJtUA$CHtm9S836vcxOJM8OiB8uvkHOPe0LX/MuYQtpScb7Ss=",
+    "last_login": "2024-03-24T06:03:02Z",
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-03-23T17:47:07Z",
+    "username": "",
+    "email": "gufyisurka@gufum.com",
+    "activation_key": "8dd3fd946cb2531f7c7fd0621d79077c7120f411",
+    "activation_name_set": "",
+    "activation_key_will_expires": "2024-03-23",
+    "groups": [
+      1
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth_app.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$pWmDmca3lSUndQnPByWNYs$2J0zaKdBxd++MTrndG7PcgIVCrRQugogzv9RGSiUDA4=",
+    "last_login": "2024-03-24T16:25:03.503Z",
+    "is_superuser": true,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-03-23T18:01:13.660Z",
+    "username": "",
+    "email": "admin@gmail.com",
+    "activation_key": "",
+    "activation_name_set": "",
+    "activation_key_will_expires": "2024-03-23",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth_app.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$BWc8CVTouGYQziNVQzt7xp$Ogi3/fCxRhHfZe8RoxT2NSxS2MbrrikkTXGkNM6Xu5Q=",
+    "last_login": "2024-03-23T18:03:13Z",
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-03-23T18:02:55Z",
+    "username": "",
+    "email": "tuspiditra@gufum.com",
+    "activation_key": "089b35fedbcfe13fa3a74deaafd3bae86056a2a4",
+    "activation_name_set": "",
+    "activation_key_will_expires": "2024-03-23",
+    "groups": [
+      1
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth_app.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$6mKLlOzYz6sdXGfs7qw24x$JR/DZNSGXTrr8ugbiuDy17Vj4sGwMYq7WVjMhmMd9xg=",
+    "last_login": "2024-03-23T18:05:01Z",
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-03-23T18:04:47Z",
+    "username": "",
+    "email": "heltupusta@gufum.com",
+    "activation_key": "b4b8128e410054817e6e9de0b1e989fb5c6e7d65",
+    "activation_name_set": "",
+    "activation_key_will_expires": "2024-03-23",
+    "groups": [
+      1
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth_app.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$QCd4VGaZdK6oqulEmKbr3x$w3dtgNYpmq0W+SE4hMYlY7GYC/mCMh2VgutKCsfV54c=",
+    "last_login": "2024-03-23T18:07:45Z",
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-03-23T18:07:19Z",
+    "username": "",
+    "email": "lolmazosti@gufum.com",
+    "activation_key": "e60ea3747cda886367b2a7d7920c706b6fad9a3e",
+    "activation_name_set": "",
+    "activation_key_will_expires": "2024-03-23",
+    "groups": [
+      1
+    ],
+    "user_permissions": []
+  }
+}
+]

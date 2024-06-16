@@ -1,0 +1,242 @@
+[
+{
+  "model": "catalog.price",
+  "pk": 1,
+  "fields": {
+    "created_at": "2024-03-24T06:20:16.339Z",
+    "updated_at": "2024-03-25T08:42:05.950Z",
+    "is_active": true,
+    "price": "37800.00",
+    "product": 1,
+    "seller": 4
+  }
+},
+{
+  "model": "catalog.price",
+  "pk": 2,
+  "fields": {
+    "created_at": "2024-03-24T06:28:20.176Z",
+    "updated_at": "2024-03-25T08:42:11.073Z",
+    "is_active": true,
+    "price": "21600.00",
+    "product": 2,
+    "seller": 3
+  }
+},
+{
+  "model": "catalog.price",
+  "pk": 3,
+  "fields": {
+    "created_at": "2024-03-24T06:33:11.344Z",
+    "updated_at": "2024-03-25T08:42:15.453Z",
+    "is_active": true,
+    "price": "10800.00",
+    "product": 3,
+    "seller": 1
+  }
+},
+{
+  "model": "catalog.price",
+  "pk": 4,
+  "fields": {
+    "created_at": "2024-03-24T06:41:23.197Z",
+    "updated_at": "2024-03-25T08:42:19.785Z",
+    "is_active": true,
+    "price": "16100.00",
+    "product": 4,
+    "seller": 2
+  }
+},
+{
+  "model": "catalog.price",
+  "pk": 5,
+  "fields": {
+    "created_at": "2024-03-24T06:46:35.347Z",
+    "updated_at": "2024-03-25T08:42:24.139Z",
+    "is_active": true,
+    "price": "10800.00",
+    "product": 5,
+    "seller": 4
+  }
+},
+{
+  "model": "catalog.price",
+  "pk": 6,
+  "fields": {
+    "created_at": "2024-03-24T06:46:48.480Z",
+    "updated_at": "2024-03-25T08:42:31.442Z",
+    "is_active": true,
+    "price": "108000.00",
+    "product": 6,
+    "seller": 3
+  }
+},
+{
+  "model": "catalog.price",
+  "pk": 7,
+  "fields": {
+    "created_at": "2024-03-24T06:53:59.647Z",
+    "updated_at": "2024-03-25T08:42:39.300Z",
+    "is_active": true,
+    "price": "32400.00",
+    "product": 7,
+    "seller": 1
+  }
+},
+{
+  "model": "catalog.price",
+  "pk": 8,
+  "fields": {
+    "created_at": "2024-03-24T06:54:11.955Z",
+    "updated_at": "2024-03-25T08:42:53.103Z",
+    "is_active": true,
+    "price": "21600.00",
+    "product": 8,
+    "seller": 2
+  }
+},
+{
+  "model": "catalog.price",
+  "pk": 9,
+  "fields": {
+    "created_at": "2024-03-24T10:52:26.761Z",
+    "updated_at": "2024-03-25T08:43:00.525Z",
+    "is_active": true,
+    "price": "50000.00",
+    "product": 9,
+    "seller": 4
+  }
+},
+{
+  "model": "catalog.price",
+  "pk": 10,
+  "fields": {
+    "created_at": "2024-03-24T10:52:48.186Z",
+    "updated_at": "2024-03-25T08:43:05.438Z",
+    "is_active": true,
+    "price": "65000.00",
+    "product": 10,
+    "seller": 3
+  }
+},
+{
+  "model": "catalog.price",
+  "pk": 11,
+  "fields": {
+    "created_at": "2024-03-24T10:54:49.290Z",
+    "updated_at": "2024-03-25T08:43:10.286Z",
+    "is_active": true,
+    "price": "44000.00",
+    "product": 11,
+    "seller": 1
+  }
+},
+{
+  "model": "catalog.price",
+  "pk": 12,
+  "fields": {
+    "created_at": "2024-03-24T10:55:05.635Z",
+    "updated_at": "2024-03-25T08:43:17.061Z",
+    "is_active": true,
+    "price": "38000.00",
+    "product": 12,
+    "seller": 2
+  }
+},
+{
+  "model": "catalog.price",
+  "pk": 13,
+  "fields": {
+    "created_at": "2024-03-24T10:55:20.972Z",
+    "updated_at": "2024-03-25T08:43:27.172Z",
+    "is_active": true,
+    "price": "35000.00",
+    "product": 14,
+    "seller": 4
+  }
+},
+{
+  "model": "catalog.price",
+  "pk": 14,
+  "fields": {
+    "created_at": "2024-03-24T10:55:33.785Z",
+    "updated_at": "2024-03-25T08:43:32.480Z",
+    "is_active": true,
+    "price": "10000.00",
+    "product": 15,
+    "seller": 4
+  }
+},
+{
+  "model": "catalog.price",
+  "pk": 15,
+  "fields": {
+    "created_at": "2024-03-24T10:55:49.664Z",
+    "updated_at": "2024-03-25T08:43:36.965Z",
+    "is_active": true,
+    "price": "16000.00",
+    "product": 16,
+    "seller": 3
+  }
+},
+{
+  "model": "catalog.price",
+  "pk": 16,
+  "fields": {
+    "created_at": "2024-03-24T10:56:10.178Z",
+    "updated_at": "2024-03-25T08:43:51.400Z",
+    "is_active": true,
+    "price": "70000.00",
+    "product": 17,
+    "seller": 1
+  }
+},
+{
+  "model": "catalog.price",
+  "pk": 17,
+  "fields": {
+    "created_at": "2024-03-24T10:56:34.533Z",
+    "updated_at": "2024-03-25T08:43:47.126Z",
+    "is_active": true,
+    "price": "30000.00",
+    "product": 18,
+    "seller": 1
+  }
+},
+{
+  "model": "catalog.price",
+  "pk": 18,
+  "fields": {
+    "created_at": "2024-03-24T10:56:47.777Z",
+    "updated_at": "2024-03-25T08:43:54.704Z",
+    "is_active": true,
+    "price": "50000.00",
+    "product": 19,
+    "seller": 2
+  }
+},
+{
+  "model": "catalog.price",
+  "pk": 19,
+  "fields": {
+    "created_at": "2024-03-24T13:24:17.459Z",
+    "updated_at": "2024-03-25T08:43:57.671Z",
+    "is_active": true,
+    "price": "70000.00",
+    "product": 20,
+    "seller": 1
+  }
+},
+{
+  "model": "catalog.price",
+  "pk": 20,
+  "fields": {
+    "created_at": "2024-03-24T13:26:55.103Z",
+    "updated_at": "2024-03-25T08:43:21.981Z",
+    "is_active": true,
+    "price": "40000.00",
+    "product": 13,
+    "seller": 3
+  }
+}
+]

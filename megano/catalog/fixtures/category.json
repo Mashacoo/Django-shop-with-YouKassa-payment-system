@@ -1,0 +1,101 @@
+[
+{
+  "model": "catalog.category",
+  "pk": 1,
+  "fields": {
+    "title": "Телевизоры",
+    "image": "categories/title/2024/03/25/Телевизоры.png",
+    "display_on_index_page": true
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 2,
+  "fields": {
+    "title": "Наушники",
+    "image": "categories/title/2024/03/25/Наушники.png.png",
+    "display_on_index_page": true
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 3,
+  "fields": {
+    "title": "Стиральные машины",
+    "image": "categories/title/2024/03/25/Стиральные_машины.png",
+    "display_on_index_page": true
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 4,
+  "fields": {
+    "title": "Фотоаппараты",
+    "image": "categories/title/2024/03/25/Фотоаппараты.png.png",
+    "display_on_index_page": true
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 5,
+  "fields": {
+    "title": "Мобильные телефоны",
+    "image": "categories/title/2024/03/25/Мобильные_телефоны.png",
+    "display_on_index_page": true
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 6,
+  "fields": {
+    "title": "Микроволновые печи",
+    "image": "categories/title/2024/03/25/Микроволновые_печи.png.png",
+    "display_on_index_page": true
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 7,
+  "fields": {
+    "title": "Торшеры",
+    "image": "categories/title/2024/03/25/Торшеры.png.png",
+    "display_on_index_page": true
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 8,
+  "fields": {
+    "title": "Холодильники",
+    "image": "categories/title/2024/03/25/Холодильники.png",
+    "display_on_index_page": true
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 9,
+  "fields": {
+    "title": "Пылесосы",
+    "image": "categories/title/2024/03/25/Пылесосы.png",
+    "display_on_index_page": true
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 10,
+  "fields": {
+    "title": "Кондиционеры",
+    "image": "categories/title/2024/03/25/Кондиционеры_Gehxxfp.png",
+    "display_on_index_page": true
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 11,
+  "fields": {
+    "title": "Утюги",
+    "image": "categories/title/2024/03/25/Утюги.png",
+    "display_on_index_page": true
+  }
+}
+]

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+  <div class="Middle Middle_top">
+    <div class="Middle-top">
+      <div class="wrap">
+        <div class="Middle-header">
+          <h1 class="Middle-title">Settings
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="Section Section_column Section_columnLeft Section_columnWide">
+      <div class="wrap">
+        <div class="Section-content">
+          <form method="post" action="{% url 'admin:your_app_name_setting_changelist' %}">
+            {% csrf_token %}
+            {% for setting in settings %}
+              <div class="Section-columnContent">
+                <label for="{{ setting.key }}">{{ setting.key }}
+                  {% if setting.value|yesno:"true,false" %}
+                    <input type="checkbox" id="{{ setting.key }}" name="{{ setting.key }}" {% if setting.value|yesno:"true,false" %}checked{% endif %}>
+                  {% else %}
+                    <input type="text" id="{{ setting.key }}" name="{{ setting.key }}" value="{{ setting.value }}">
+                  {% endif %}
+                </label>
+              </div>
+            {% endfor %}
+            <div class="Section-columnContent">
+              <button type="submit">Save Settings</button>
+            </div>
+          </form>
+          <form method="post" action="{% url 'your_reset_cache_view' %}">
+            {% csrf_token %}
+            <div class="Section-columnContent">
+              <button type="submit">Reset Cache</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

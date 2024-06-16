@@ -1,0 +1,686 @@
+[
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 1,
+  "fields": {
+    "created_at": "2024-03-24T06:20:03.736Z",
+    "updated_at": "2024-03-24T06:20:03.736Z",
+    "is_active": true,
+    "product": 1,
+    "characteristic": 12,
+    "value": "18000 BTU"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 2,
+  "fields": {
+    "created_at": "2024-03-24T06:20:03.737Z",
+    "updated_at": "2024-03-24T06:20:03.737Z",
+    "is_active": true,
+    "product": 1,
+    "characteristic": 13,
+    "value": "50 м²"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 3,
+  "fields": {
+    "created_at": "2024-03-24T06:20:03.738Z",
+    "updated_at": "2024-03-24T06:20:03.738Z",
+    "is_active": true,
+    "product": 1,
+    "characteristic": 14,
+    "value": "A++"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 4,
+  "fields": {
+    "created_at": "2024-03-24T06:28:03.844Z",
+    "updated_at": "2024-03-24T06:28:03.844Z",
+    "is_active": true,
+    "product": 2,
+    "characteristic": 12,
+    "value": "3500 Вт"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 5,
+  "fields": {
+    "created_at": "2024-03-24T06:28:03.845Z",
+    "updated_at": "2024-03-24T06:28:03.845Z",
+    "is_active": true,
+    "product": 2,
+    "characteristic": 13,
+    "value": "20 м²"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 6,
+  "fields": {
+    "created_at": "2024-03-24T06:28:03.845Z",
+    "updated_at": "2024-03-24T06:28:03.845Z",
+    "is_active": true,
+    "product": 2,
+    "characteristic": 15,
+    "value": "53 дБ"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 7,
+  "fields": {
+    "created_at": "2024-03-24T06:33:00.824Z",
+    "updated_at": "2024-03-24T06:33:00.824Z",
+    "is_active": true,
+    "product": 3,
+    "characteristic": 16,
+    "value": "23 л"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 8,
+  "fields": {
+    "created_at": "2024-03-24T06:33:00.824Z",
+    "updated_at": "2024-03-24T06:33:00.824Z",
+    "is_active": true,
+    "product": 3,
+    "characteristic": 12,
+    "value": "800 Вт"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 9,
+  "fields": {
+    "created_at": "2024-03-24T06:33:00.824Z",
+    "updated_at": "2024-03-24T06:33:00.824Z",
+    "is_active": true,
+    "product": 3,
+    "characteristic": 17,
+    "value": "Разморозки"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 10,
+  "fields": {
+    "created_at": "2024-03-24T06:36:40.823Z",
+    "updated_at": "2024-03-24T06:36:40.823Z",
+    "is_active": true,
+    "product": 4,
+    "characteristic": 16,
+    "value": "28 л"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 11,
+  "fields": {
+    "created_at": "2024-03-24T06:36:40.824Z",
+    "updated_at": "2024-03-24T06:36:40.824Z",
+    "is_active": true,
+    "product": 4,
+    "characteristic": 12,
+    "value": "900 Вт"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 12,
+  "fields": {
+    "created_at": "2024-03-24T06:36:40.824Z",
+    "updated_at": "2024-03-24T06:36:40.824Z",
+    "is_active": true,
+    "product": 4,
+    "characteristic": 17,
+    "value": "Cамоочистки"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 13,
+  "fields": {
+    "created_at": "2024-03-24T06:43:55.893Z",
+    "updated_at": "2024-03-24T06:43:55.893Z",
+    "is_active": true,
+    "product": 5,
+    "characteristic": 18,
+    "value": "6.53"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 14,
+  "fields": {
+    "created_at": "2024-03-24T06:43:55.902Z",
+    "updated_at": "2024-03-24T06:43:55.902Z",
+    "is_active": true,
+    "product": 5,
+    "characteristic": 19,
+    "value": "MediaTek Helio G35"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 15,
+  "fields": {
+    "created_at": "2024-03-24T06:43:55.918Z",
+    "updated_at": "2024-03-24T06:43:55.918Z",
+    "is_active": true,
+    "product": 5,
+    "characteristic": 20,
+    "value": "3/64 ГБ"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 16,
+  "fields": {
+    "created_at": "2024-03-24T06:46:10.585Z",
+    "updated_at": "2024-03-24T06:46:10.585Z",
+    "is_active": true,
+    "product": 6,
+    "characteristic": 18,
+    "value": "6.8"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 17,
+  "fields": {
+    "created_at": "2024-03-24T06:46:10.586Z",
+    "updated_at": "2024-03-24T06:46:10.586Z",
+    "is_active": true,
+    "product": 6,
+    "characteristic": 19,
+    "value": "Snapdragon 8 Gen 2"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 18,
+  "fields": {
+    "created_at": "2024-03-24T06:46:10.590Z",
+    "updated_at": "2024-03-24T06:46:10.590Z",
+    "is_active": true,
+    "product": 6,
+    "characteristic": 20,
+    "value": "12/256 ГБ"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 19,
+  "fields": {
+    "created_at": "2024-03-24T06:51:18.189Z",
+    "updated_at": "2024-03-24T06:51:18.189Z",
+    "is_active": true,
+    "product": 7,
+    "characteristic": 21,
+    "value": "5.2"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 20,
+  "fields": {
+    "created_at": "2024-03-24T06:51:18.189Z",
+    "updated_at": "2024-03-24T06:51:18.189Z",
+    "is_active": true,
+    "product": 7,
+    "characteristic": 22,
+    "value": "до 30 часов"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 21,
+  "fields": {
+    "created_at": "2024-03-24T06:51:18.190Z",
+    "updated_at": "2024-03-24T06:51:18.190Z",
+    "is_active": true,
+    "product": 7,
+    "characteristic": 23,
+    "value": "LDAC"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 22,
+  "fields": {
+    "created_at": "2024-03-24T06:53:31.852Z",
+    "updated_at": "2024-03-24T06:53:31.852Z",
+    "is_active": true,
+    "product": 8,
+    "characteristic": 21,
+    "value": "5.0"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 23,
+  "fields": {
+    "created_at": "2024-03-24T06:53:31.853Z",
+    "updated_at": "2024-03-24T06:53:31.853Z",
+    "is_active": true,
+    "product": 8,
+    "characteristic": 22,
+    "value": "до 4.5 часов"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 24,
+  "fields": {
+    "created_at": "2024-03-24T06:53:31.854Z",
+    "updated_at": "2024-03-24T06:53:31.854Z",
+    "is_active": true,
+    "product": 8,
+    "characteristic": 24,
+    "value": "Прозрачности"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 25,
+  "fields": {
+    "created_at": "2024-03-24T10:27:53.623Z",
+    "updated_at": "2024-03-24T10:27:53.623Z",
+    "is_active": true,
+    "product": 9,
+    "characteristic": 12,
+    "value": "230 AW"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 26,
+  "fields": {
+    "created_at": "2024-03-24T10:27:53.625Z",
+    "updated_at": "2024-03-24T10:27:53.625Z",
+    "is_active": true,
+    "product": 9,
+    "characteristic": 22,
+    "value": "о 60 минут"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 27,
+  "fields": {
+    "created_at": "2024-03-24T10:27:53.626Z",
+    "updated_at": "2024-03-24T10:27:53.626Z",
+    "is_active": true,
+    "product": 9,
+    "characteristic": 25,
+    "value": "HEPA"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 28,
+  "fields": {
+    "created_at": "2024-03-24T10:29:58.536Z",
+    "updated_at": "2024-03-24T10:29:58.536Z",
+    "is_active": true,
+    "product": 10,
+    "characteristic": 25,
+    "value": "5-ступенчатая система"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 29,
+  "fields": {
+    "created_at": "2024-03-24T10:29:58.536Z",
+    "updated_at": "2024-03-24T10:29:58.536Z",
+    "is_active": true,
+    "product": 10,
+    "characteristic": 26,
+    "value": "цифровой"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 30,
+  "fields": {
+    "created_at": "2024-03-24T10:32:12.825Z",
+    "updated_at": "2024-03-24T10:32:12.825Z",
+    "is_active": true,
+    "product": 11,
+    "characteristic": 27,
+    "value": "8 кг"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 31,
+  "fields": {
+    "created_at": "2024-03-24T10:32:12.825Z",
+    "updated_at": "2024-03-24T10:32:12.825Z",
+    "is_active": true,
+    "product": 11,
+    "characteristic": 14,
+    "value": "A+++"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 32,
+  "fields": {
+    "created_at": "2024-03-24T10:32:12.826Z",
+    "updated_at": "2024-03-24T10:32:12.826Z",
+    "is_active": true,
+    "product": 11,
+    "characteristic": 15,
+    "value": "50 дБ"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 33,
+  "fields": {
+    "created_at": "2024-03-24T10:33:52.411Z",
+    "updated_at": "2024-03-24T10:33:52.411Z",
+    "is_active": true,
+    "product": 12,
+    "characteristic": 27,
+    "value": "6 кг"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 34,
+  "fields": {
+    "created_at": "2024-03-24T10:33:52.412Z",
+    "updated_at": "2024-03-24T10:33:52.412Z",
+    "is_active": true,
+    "product": 12,
+    "characteristic": 14,
+    "value": "A++"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 35,
+  "fields": {
+    "created_at": "2024-03-24T10:33:52.412Z",
+    "updated_at": "2024-03-24T10:33:52.412Z",
+    "is_active": true,
+    "product": 12,
+    "characteristic": 15,
+    "value": "72 дБ"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 36,
+  "fields": {
+    "created_at": "2024-03-24T10:35:49.102Z",
+    "updated_at": "2024-03-24T10:35:49.102Z",
+    "is_active": true,
+    "product": 13,
+    "characteristic": 26,
+    "value": "55"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 37,
+  "fields": {
+    "created_at": "2024-03-24T10:35:49.103Z",
+    "updated_at": "2024-03-24T10:35:49.103Z",
+    "is_active": true,
+    "product": 13,
+    "characteristic": 28,
+    "value": "60 Гц"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 38,
+  "fields": {
+    "created_at": "2024-03-24T10:35:49.103Z",
+    "updated_at": "2024-03-24T10:35:49.103Z",
+    "is_active": true,
+    "product": 13,
+    "characteristic": 29,
+    "value": "20 Вт"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 39,
+  "fields": {
+    "created_at": "2024-03-24T10:37:29.233Z",
+    "updated_at": "2024-03-24T10:37:29.233Z",
+    "is_active": true,
+    "product": 14,
+    "characteristic": 26,
+    "value": "55"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 40,
+  "fields": {
+    "created_at": "2024-03-24T10:37:29.233Z",
+    "updated_at": "2024-03-24T10:37:29.233Z",
+    "is_active": true,
+    "product": 14,
+    "characteristic": 28,
+    "value": "120 гЦ"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 41,
+  "fields": {
+    "created_at": "2024-03-24T10:37:29.233Z",
+    "updated_at": "2024-03-24T10:37:29.233Z",
+    "is_active": true,
+    "product": 14,
+    "characteristic": 15,
+    "value": "40 Вт"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 42,
+  "fields": {
+    "created_at": "2024-03-24T10:39:31.487Z",
+    "updated_at": "2024-03-24T10:39:31.487Z",
+    "is_active": true,
+    "product": 15,
+    "characteristic": 30,
+    "value": "текстиль"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 43,
+  "fields": {
+    "created_at": "2024-03-24T10:39:31.489Z",
+    "updated_at": "2024-03-24T10:39:31.489Z",
+    "is_active": true,
+    "product": 15,
+    "characteristic": 31,
+    "value": "120-170 см"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 44,
+  "fields": {
+    "created_at": "2024-03-24T10:39:31.490Z",
+    "updated_at": "2024-03-24T10:39:31.490Z",
+    "is_active": true,
+    "product": 15,
+    "characteristic": 32,
+    "value": "60 Вт"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 45,
+  "fields": {
+    "created_at": "2024-03-24T10:43:29.363Z",
+    "updated_at": "2024-03-24T10:43:29.363Z",
+    "is_active": true,
+    "product": 16,
+    "characteristic": 12,
+    "value": "2400 Вт"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 46,
+  "fields": {
+    "created_at": "2024-03-24T10:43:29.363Z",
+    "updated_at": "2024-03-24T10:43:29.363Z",
+    "is_active": true,
+    "product": 16,
+    "characteristic": 33,
+    "value": "6 бар"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 47,
+  "fields": {
+    "created_at": "2024-03-24T10:43:29.363Z",
+    "updated_at": "2024-03-24T10:43:29.363Z",
+    "is_active": true,
+    "product": 16,
+    "characteristic": 34,
+    "value": "Durilium AirGlide Autoclean"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 48,
+  "fields": {
+    "created_at": "2024-03-24T10:46:36.368Z",
+    "updated_at": "2024-03-24T10:46:36.368Z",
+    "is_active": true,
+    "product": 18,
+    "characteristic": 35,
+    "value": "20.3 МП"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 49,
+  "fields": {
+    "created_at": "2024-03-24T10:46:36.368Z",
+    "updated_at": "2024-03-24T10:46:36.368Z",
+    "is_active": true,
+    "product": 18,
+    "characteristic": 19,
+    "value": "DIGIC 8"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 50,
+  "fields": {
+    "created_at": "2024-03-24T10:46:36.368Z",
+    "updated_at": "2024-03-24T10:46:36.368Z",
+    "is_active": true,
+    "product": 18,
+    "characteristic": 36,
+    "value": "оптическая стабилизация"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 51,
+  "fields": {
+    "created_at": "2024-03-24T10:47:22.494Z",
+    "updated_at": "2024-03-24T10:47:22.494Z",
+    "is_active": true,
+    "product": 17,
+    "characteristic": 37,
+    "value": "60 мм"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 52,
+  "fields": {
+    "created_at": "2024-03-24T10:47:22.495Z",
+    "updated_at": "2024-03-24T10:47:22.495Z",
+    "is_active": true,
+    "product": 17,
+    "characteristic": 38,
+    "value": "60 см"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 53,
+  "fields": {
+    "created_at": "2024-03-24T10:47:22.496Z",
+    "updated_at": "2024-03-24T10:47:22.496Z",
+    "is_active": true,
+    "product": 17,
+    "characteristic": 39,
+    "value": "62x46 мм"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 54,
+  "fields": {
+    "created_at": "2024-03-24T10:49:53.804Z",
+    "updated_at": "2024-03-24T10:49:53.804Z",
+    "is_active": true,
+    "product": 19,
+    "characteristic": 16,
+    "value": "384 л"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 55,
+  "fields": {
+    "created_at": "2024-03-24T10:49:53.820Z",
+    "updated_at": "2024-03-24T10:49:53.820Z",
+    "is_active": true,
+    "product": 19,
+    "characteristic": 14,
+    "value": "A++"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 56,
+  "fields": {
+    "created_at": "2024-03-24T10:51:14.483Z",
+    "updated_at": "2024-03-24T10:51:14.484Z",
+    "is_active": true,
+    "product": 20,
+    "characteristic": 16,
+    "value": "340 л"
+  }
+},
+{
+  "model": "catalog.productcharacteristic",
+  "pk": 57,
+  "fields": {
+    "created_at": "2024-03-24T10:51:14.484Z",
+    "updated_at": "2024-03-24T10:51:14.484Z",
+    "is_active": true,
+    "product": 20,
+    "characteristic": 14,
+    "value": "A+"
+  }
+}
+]

@@ -1,0 +1,106 @@
+{% extends "coreapp/base.html" %}
+{% load static %}
+{% load get_last_price_filter %}
+{% load custom_filters %}
+
+{% block main %}
+    <div class="Middle Middle_top">
+        <div class="Section">
+            <div class="wrap">
+                <form class="form Cart" action="#" method="post">
+                    {% for item in cart.cart_items %}
+                    <div class="Cart-product">
+                        <div class="Cart-block Cart-block_row">
+                            <div class="Cart-block Cart-block_pict">
+                                {% if item.product.image %}
+                                    <a class="Cart-pict" href="{{ item.product.image }}" target="_blank">
+                                        <img class="Cart-img" src="{{ item.product.image }}" alt="{{ item.product.title }}" />
+                                    </a>
+                                {% endif %}
+                            </div>
+                            <div class="Cart-block Cart-block_info">
+                                <a class="Cart-title" href="{% url 'catalog:product' pk=item.product.pk %}">
+                                    {{ item.product.title }}
+                                </a>
+                                <div class="Cart-desc">
+                                    {{ item.product.description }}
+                                </div>
+                                <div class="Cart-block Cart-block_seller">
+                                {{ item.seller.name }}
+                                </div>
+                            </div>
+                            <div class="Cart-block Cart-block_price">
+                                {% if item.product.product_discounts %}
+                                <div class="Cart-price" style="width:150px">
+                                    <s>{{ item.product.pk | get_last_price:item.seller.pk | price_format }}</s>
+                                </div>
+
+                            </div>
+                            <div class="Cart-block Cart-block_price">
+                                <div class="Cart-price" style="width:150px">
+                                    Со скидкой <br/>
+                                    {{ item.product.product_discounts | price_format }}
+                                </div>
+                                {% else %}
+                                <div class="Cart-price" style="width:150px">
+                                    {{ item.product.pk | get_last_price:item.seller.pk | price_format }}
+                                </div>
+                                {% endif %}
+                            </div>
+
+                        </div>
+                        <div class="Cart-block Cart-block_row">
+
+                            <div class="Cart-block Cart-block_amount">
+                                <div class="Cart-amount">
+                                    <div class="Amount">
+                                        <button class="Amount-remove" type="button">
+                                        </button>
+                                        <input class="Amount-input form-input" name="amount" type="text" value="{{ item.quantity }}" />
+                                        <button class="Amount-add" type="button">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Cart-block Cart-block_delete">
+                                <a class="Cart-delete" href="{% url 'cart:delete_item' %}?product_id={{item.product.pk}}&seller_id={{item.seller.pk}}">
+                                    <img src='{% static "assets/img/icons/card/delete.svg" %}' alt="delete.svg" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                    <div class="Cart-total">
+                        <div class="Cart-block Cart-block_total">
+                            <strong class="Cart-title">Итого:
+                            </strong>
+                            <span class="Cart-price">{{ cart.total_amount | price_format }}</span>
+                            <div>
+                            <strong class="Cart-title">Общая стоимость с учетом всех скидок:
+                            </strong>
+                            {% if request.user.is_authenticated %}
+                            {% if sale_price %}
+                            <span class="Cart-price"> {{ sale_price | price_format }}</span>
+                            {% endif %}
+                            {% else %}
+                                <p>Войдите в свой аккаунт, чтобы оформить заказ и получить скидку</p>
+                            {% endif %}
+                        </div>
+                        </div>
+
+                        {% if request.user.is_authenticated %}
+                            <div class="Cart-block">
+                                <a class="btn btn_success btn_lg" href="{% url 'order:order_create' %}">Оформить заказ</a>
+                            </div>
+                        {% else %}
+                        <div class="Cart-block">
+                            <a class="btn btn_success btn_lg" href="{% url 'auth_app:login' %}">Авторизоваться</a>
+                        </div>
+                        {% endif %}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

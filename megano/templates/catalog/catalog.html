@@ -1,0 +1,201 @@
+{% extends 'coreapp/base.html' %}
+{% load static %}
+{% load custom_filters %}
+{% load i18n %}
+{% block title %}
+      Catalog
+{% endblock %}
+
+{% block main %}
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var sortLinks = document.querySelectorAll('.Sort-variants a');
+            if ("{{ show_buy_modal }}" === 'True') {
+                document.getElementById('open_buy_modal').style.display = 'block';
+            }
+            sortLinks.forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+
+                    var sortValue = link.getAttribute('href').split('=')[1];
+                    var currentUrl = window.location.href;
+                    var url = updateQueryStringParameter(currentUrl, 'sort', sortValue);
+
+                    window.location.href = url;
+                });
+            });
+
+            function updateQueryStringParameter(uri, key, value) {
+                var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
+                var separator = uri.indexOf('?') !== -1 ? "&" : "?";
+                if (uri.match(re)) {
+                    return uri.replace(re, '$1' + key + "=" + value + '$2');
+                } else {
+                    return uri + separator + key + "=" + value;
+                }
+            }
+        });
+    </script>
+<div id="open_buy_modal" class="my_modal">
+        <div class="my_modal-dialog">
+            <div class="my_modal-content">
+                <div class="my_modal-header">
+                    <p class="my_modal-title">{% translate "Congratulations!" %}</p>
+                    <a href="" title="{% translate 'Close a window' %}" class="close">×</a>
+                </div>
+                <div class="my_modal-body">
+                    <p>{% translate "Product successfully added to cart" %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Middle Middle_top">
+        <div class="Section Section_column Section_columnLeft">
+            <div class="wrap">
+                <div class="Section-column">
+                    <div class="Section-columnSection">
+                        <header class="Section-header">
+                            <strong class="Section-title">Фильтр</strong>
+                        </header>
+                        <div class="Section-columnContent">
+                            <form class="form" action="{% url 'catalog:catalog' %}" method="get">
+                                <div class="form-group">
+                                    <div class="range Section-columnRange">
+                                        <input class="range-line" id="price" name="price" type="text" data-type="double" data-min="0" data-max="120000" data-from="10000" data-to="50000" />
+                                        <div class="range-price">Цена:&#32;
+                                            <div class="rangePrice">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-input form-input_full" id="title" name="title" type="text" placeholder="Название" />
+                                </div>
+                                <div class="form-group">
+                                    <!-- - var options = setOptions(items, ['value', 'selected', 'disabled']);-->
+                                </div>
+                                <div class="form-group">
+                                    <label class="toggle">
+                                        <input type="checkbox" name="available" {% if request.GET.available == 'True' %}checked{% endif %} />
+                                        <span class="toggle-box"></span>
+                                        <span class="toggle-text">Только товары в наличии</span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="toggle">
+                                        <input type="checkbox" name="free_delivery" {% if request.GET.free_delivery == 'True' %}checked{% endif %} />
+                                        <span class="toggle-box"></span>
+                                        <span class="toggle-text">С бесплатной доставкой</span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <div class="buttons">
+                                        <button type="submit" class="btn btn_square btn_dark btn_narrow">Фильтр</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="Section-columnSection">
+                        <header class="Section-header">
+                            <strong class="Section-title">Популярные тэги
+                            </strong>
+                        </header>
+                        <div class="Section-columnContent">
+                            <div class="buttons">
+                                <a class="btn btn_default btn_sm" href="?tag=кондиционер">Кондиционеры</a>
+                                <a class="btn btn_default btn_sm" href="?tag=микроволновка">Микроволновые печи</a>
+                                <a class="btn btn_default btn_sm" href="?tag=телефон">Мобильные телефоны</a>
+                                <a class="btn btn_default btn_sm" href="?tag=наушник">Наушники</a>
+                                <a class="btn btn_default btn_sm" href="?tag=пылесос">Пылесосы</a>
+                                <a class="btn btn_default btn_sm" href="?tag=машина_стиральная">Стиральные машины</a>
+                                <a class="btn btn_default btn_sm" href="?tag=телевизор">Телевизор</a>
+                                <a class="btn btn_default btn_sm" href="?tag=торшер">Торшеры</a>
+                                <a class="btn btn_default btn_sm" href="?tag=утюг">Утюги</a>
+                                <a class="btn btn_default btn_sm" href="?tag=фотоаппарат">Фотоаппараты</a>
+                                <a class="btn btn_default btn_sm" href="?tag=холодильник">Холодильники</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Section-content">
+                    <div class="Sort">
+                        <div class="Sort-title">Сортировать по:</div>
+                            <div class="Sort-variants">
+                                <a class="Sort-sortBy Sort-sortBy_dec" href="?sort=popularity">Популярности</a>
+                                <a class="Sort-sortBy" href="?sort=price">Цене</a>
+                                <a class="Sort-sortBy" href="?sort=reviews">Отзывам</a>
+                                <a class="Sort-sortBy Sort-sortBy_inc" href="?sort=newness">Новизне</a>
+                            </div>
+                    </div>
+                    <div class="Cards">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            {% for product in products_page %}
+                                <div class="col mb-4">
+                                    <div class="Card border rounded">
+                                        {% with product_image=product|first_image %}
+                                            {% if product_image %}
+                                                <a class="Card-picture" href="{% url 'catalog:product' pk=product.id %}">
+                                                    <img src="{{ product_image.image.url }}" alt="{{ product.title }}" class="img-fluid" />
+                                                </a>
+                                            {% endif %}
+                                        {% endwith %}
+                                        <div class="Card-content p-3">
+                                            <strong class="Card-title">
+                                                <a href="{% url 'catalog:product' pk=product.id %}" class="text-decoration-none text-dark">{{ product.title }}</a>
+                                            </strong>
+                                            <div class="Card-description mt-2">
+                                                <div class="Card-cost">
+                                                    <span class="Card-price">{{ product.prices__price__min|price_format }}</span>
+                                                </div>
+                                                <div class="Card-category text-muted">{{ product.category.title }}  {{ product }}</div>
+                                                    <div class="Card-hover mt-3">
+                                                        <form class="add_to_comparison" method="post" id="add_product_to_cart_from_catalog">
+                                                                {% csrf_token %}
+                                                                <input name="product_id" type="text" value="{{ product.pk }}" style="display: none"/>
+                                                                <input name="price" type="text" value="{{ product.prices__price__min }}" style="display: none"/>
+                                                                <button class="Card-btn btn btn-dark" name="add_product_to_cart_from_catalog" type="submit">
+                                                                <img src="{% get_static_prefix %}assets/img/icons/card/cart.svg" alt="cart.svg">
+                                                                </button>
+                                                        </form>
+                                                            {% if request.user.is_authenticated %}
+                                                                <form class="add_to_comparison" method="post" id="add_product_to_comparison_from_catalog">
+                                                                    {% csrf_token %}
+                                                                    <input name="product_id" type="text" value="{{ product.pk }}" style="display: none"/>
+                                                                    <button class="Card-btn btn btn-dark" name="add_product_to_comparison_from_catalog" type="submit">
+                                                                        <img src="{% get_static_prefix %}assets/img/icons/exchange.svg" alt="exchange.svg">
+                                                                    </button>
+                                                                </form>
+                                                            {% endif %}
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% if forloop.counter|divisibleby:3 %}
+                                    </div><div class="row row-cols-1 row-cols-md-3 g-4">
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                                        <div class="Pagination mb-4">
+                        <div class="Pagination-ins">
+                            {% if products_page.has_previous %}
+                                <a class="Pagination-element Pagination-element_prev" href="?page={{ products_page.previous_page_number }}"><img src="/static/assets/img/icons/prevPagination.svg" alt="prevPagination.svg" /></a>
+                            {% else %}
+                                <span class="Pagination-element Pagination-element_prev_disabled"><img src="/static/assets/img/icons/prevPagination.svg" alt="prevPagination.svg" /></span>
+                            {% endif %}
+                            {% for num in products_page.paginator.page_range %}
+                                <a class="Pagination-element{% if num == products_page.number %} Pagination-element_current{% endif %}" href="?page={{ num }}"><span class="Pagination-text">{{ num }}</span></a>
+                            {% endfor %}
+                            {% if products_page.has_next %}
+                                <a class="Pagination-element" href="?page={{ products_page.next_page_number }}"><img src="/static/assets/img/icons/nextPagination.svg" alt="nextPagination.svg" /></a>
+                            {% else %}
+                                <span class="Pagination-element Pagination-element_next_disabled"><img src="/static/assets/img/icons/nextPagination.svg" alt="nextPagination.svg" /></span>
+                            {% endif %}
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

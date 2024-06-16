@@ -1,0 +1,30 @@
+{% extends 'auth_app/base.html' %}
+{% load static %}
+
+{% block title %}
+      Login
+{% endblock %}
+
+{% block content %}
+
+<div class="wrapper">
+    <div class="header">
+        <h3 class="sign-in">Вход</h3>
+    </div>
+    <form method="post">
+        {% csrf_token %}
+        <div>
+            {{ form.as_p }}
+        </div>
+        <div>
+            <input type="submit" value="Войти" />
+        </div>
+        <a class="forgot-label" href="{% url 'auth_app:reset_password_request' %}">Забыли пароль?</a>
+        <a class="register" href="{% url 'auth_app:registration' %}">
+            Регистрация
+        </a>
+    </form>
+</div>
+
+{% endblock %}
+

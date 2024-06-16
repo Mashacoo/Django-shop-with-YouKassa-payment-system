@@ -1,0 +1,34 @@
+[
+{
+  "model": "discounts_app.productdiscount_seller",
+  "pk": 1,
+  "fields": {
+    "productdiscount": 1,
+    "seller": 4
+  }
+},
+{
+  "model": "discounts_app.productdiscount_seller",
+  "pk": 2,
+  "fields": {
+    "productdiscount": 2,
+    "seller": 3
+  }
+},
+{
+  "model": "discounts_app.productdiscount_seller",
+  "pk": 3,
+  "fields": {
+    "productdiscount": 3,
+    "seller": 3
+  }
+},
+{
+  "model": "discounts_app.productdiscount_seller",
+  "pk": 4,
+  "fields": {
+    "productdiscount": 7,
+    "seller": 3
+  }
+}
+]

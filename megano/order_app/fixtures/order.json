@@ -1,0 +1,146 @@
+[
+{
+  "model": "order_app.order",
+  "pk": 1,
+  "fields": {
+    "created_at": "2024-03-26T18:52:06.774Z",
+    "updated_at": "2024-03-26T19:13:40.927Z",
+    "is_active": true,
+    "fio": "/",
+    "user": 3,
+    "delivery_type": "ordinary",
+    "city": null,
+    "address": "",
+    "payment_type": "online",
+    "payment_status": "unpaid",
+    "total_amount": "83840.00",
+    "payment_id": "2d953224-000f-5000-a000-17440d21df4d"
+  }
+},
+{
+  "model": "order_app.order",
+  "pk": 2,
+  "fields": {
+    "created_at": "2024-03-26T19:22:14.958Z",
+    "updated_at": "2024-03-26T19:22:15.812Z",
+    "is_active": true,
+    "fio": "/",
+    "user": 3,
+    "delivery_type": "ordinary",
+    "city": null,
+    "address": "",
+    "payment_type": "online",
+    "payment_status": "unpaid",
+    "total_amount": "25920.00",
+    "payment_id": "2d953427-000f-5000-8000-19ea5244141d"
+  }
+},
+{
+  "model": "order_app.order",
+  "pk": 3,
+  "fields": {
+    "created_at": "2024-03-26T19:22:33.221Z",
+    "updated_at": "2024-03-26T19:22:33.787Z",
+    "is_active": true,
+    "fio": "/",
+    "user": 3,
+    "delivery_type": "ordinary",
+    "city": null,
+    "address": "",
+    "payment_type": "online",
+    "payment_status": "unpaid",
+    "total_amount": "91200.00",
+    "payment_id": "2d953439-000f-5000-a000-16f1dbea6457"
+  }
+},
+{
+  "model": "order_app.order",
+  "pk": 4,
+  "fields": {
+    "created_at": "2024-03-26T20:00:21.087Z",
+    "updated_at": "2024-03-26T20:00:22.861Z",
+    "is_active": true,
+    "fio": "/",
+    "user": 4,
+    "delivery_type": "ordinary",
+    "city": null,
+    "address": "",
+    "payment_type": "online",
+    "payment_status": "unpaid",
+    "total_amount": "17280.00",
+    "payment_id": "2d953d16-000f-5000-8000-1d3b541fe7f7"
+  }
+},
+{
+  "model": "order_app.order",
+  "pk": 5,
+  "fields": {
+    "created_at": "2024-03-26T20:01:41.532Z",
+    "updated_at": "2024-03-26T20:01:42.279Z",
+    "is_active": true,
+    "fio": "/",
+    "user": 5,
+    "delivery_type": "ordinary",
+    "city": null,
+    "address": "",
+    "payment_type": "online",
+    "payment_status": "unpaid",
+    "total_amount": "62560.00",
+    "payment_id": "2d953d66-000f-5000-a000-163176a846ab"
+  }
+},
+{
+  "model": "order_app.order",
+  "pk": 6,
+  "fields": {
+    "created_at": "2024-03-26T20:01:52.775Z",
+    "updated_at": "2024-03-26T20:01:53.253Z",
+    "is_active": true,
+    "fio": "/",
+    "user": 5,
+    "delivery_type": "ordinary",
+    "city": null,
+    "address": "",
+    "payment_type": "online",
+    "payment_status": "unpaid",
+    "total_amount": "24000.00",
+    "payment_id": "2d953d71-000f-5000-9000-1af37091ef02"
+  }
+},
+{
+  "model": "order_app.order",
+  "pk": 7,
+  "fields": {
+    "created_at": "2024-03-26T20:02:06.054Z",
+    "updated_at": "2024-03-26T20:02:06.599Z",
+    "is_active": true,
+    "fio": "/",
+    "user": 5,
+    "delivery_type": "ordinary",
+    "city": null,
+    "address": "",
+    "payment_type": "online",
+    "payment_status": "unpaid",
+    "total_amount": "17280.00",
+    "payment_id": "2d953d7e-000f-5000-9000-1e26b8f66270"
+  }
+},
+{
+  "model": "order_app.order",
+  "pk": 8,
+  "fields": {
+    "created_at": "2024-03-26T20:03:05.666Z",
+    "updated_at": "2024-03-26T20:03:06.331Z",
+    "is_active": true,
+    "fio": "/",
+    "user": 1,
+    "delivery_type": "ordinary",
+    "city": null,
+    "address": "",
+    "payment_type": "online",
+    "payment_status": "unpaid",
+    "total_amount": "25280.00",
+    "payment_id": "2d953dba-000f-5000-9000-19603c7d22a3"
+  }
+}
+]

@@ -1,0 +1,66 @@
+[
+{
+  "model": "coreapp.banner",
+  "pk": 3,
+  "fields": {
+    "created_at": "2024-03-25T09:44:58.309Z",
+    "updated_at": "2024-03-25T10:15:57.265Z",
+    "is_active": true,
+    "title1": "Скидка 10%!",
+    "title2": "На Samsung Galaxy",
+    "title3": "Поторопись!",
+    "text": "Не упустите шанс купить смартфон Samsung Galaxy со скидкой 10%!",
+    "button": "Get Started",
+    "image": "banners/banner_None/product-6_Samsung_1.png",
+    "link": null
+  }
+},
+{
+  "model": "coreapp.banner",
+  "pk": 4,
+  "fields": {
+    "created_at": "2024-03-25T09:46:07.773Z",
+    "updated_at": "2024-03-25T10:23:45.444Z",
+    "is_active": true,
+    "title1": "Скидка 15%!",
+    "title2": "На Ballu BSIR/SU-18",
+    "title3": "Поторопись!",
+    "text": "Не упустите шанс купить инфракрасный обогреватель Ballu BSIR/SU-18 со скидкой 15%!",
+    "button": "Get Started",
+    "image": "banners/banner_4/product-1_Ballu_1.png",
+    "link": null
+  }
+},
+{
+  "model": "coreapp.banner",
+  "pk": 5,
+  "fields": {
+    "created_at": "2024-03-25T09:48:41.813Z",
+    "updated_at": "2024-03-25T10:27:12.055Z",
+    "is_active": true,
+    "title1": "Скидка 5000 рублей!",
+    "title2": "Electrolux",
+    "title3": "Поторопись!",
+    "text": "Не упустите шанс купить инфракрасный обогреватель Ballu BSIR/SU-18 со скидкой 5000 рублей!",
+    "button": "Get Started",
+    "image": "banners/banner_5/product-2_Electrolux_1_1.png",
+    "link": null
+  }
+},
+{
+  "model": "coreapp.banner",
+  "pk": 7,
+  "fields": {
+    "created_at": "2024-03-25T10:34:25.237Z",
+    "updated_at": "2024-03-25T10:34:25.237Z",
+    "is_active": true,
+    "title1": "Скидка 25%!",
+    "title2": "На Xiaomi Roborock",
+    "title3": "Поротопись!",
+    "text": "Не упустите шанс купить смартфон Samsung Galaxy со скидкой 10%!",
+    "button": "Get Started",
+    "image": "banners/banner_None/product-5_Xiaomi_1_1.png",
+    "link": null
+  }
+}
+]

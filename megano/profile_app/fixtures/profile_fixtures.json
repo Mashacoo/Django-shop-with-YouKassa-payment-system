@@ -1,0 +1,62 @@
+[
+{
+    "model": "profile_app.profile",
+    "pk": 1,
+    "fields": {
+        "created_at": "2024-03-23T17:47:08.741Z",
+        "updated_at": "2024-03-23T17:47:08.741Z",
+        "is_active": true,
+        "user": 1,
+        "phone": "",
+        "avatar": ""
+    }
+},
+{
+    "model": "profile_app.profile",
+    "pk": 2,
+    "fields": {
+        "created_at": "2024-03-23T18:01:14.061Z",
+        "updated_at": "2024-03-23T18:01:14.062Z",
+        "is_active": true,
+        "user": 2,
+        "phone": "",
+        "avatar": ""
+    }
+},
+{
+    "model": "profile_app.profile",
+    "pk": 3,
+    "fields": {
+        "created_at": "2024-03-23T18:02:56.205Z",
+        "updated_at": "2024-03-23T18:02:56.205Z",
+        "is_active": true,
+        "user": 3,
+        "phone": "",
+        "avatar": ""
+    }
+},
+{
+    "model": "profile_app.profile",
+    "pk": 4,
+    "fields": {
+        "created_at": "2024-03-23T18:04:47.820Z",
+        "updated_at": "2024-03-23T18:04:47.820Z",
+        "is_active": true,
+        "user": 4,
+        "phone": "",
+        "avatar": ""
+    }
+},
+{
+    "model": "profile_app.profile",
+    "pk": 5,
+    "fields": {
+        "created_at": "2024-03-23T18:07:20.250Z",
+        "updated_at": "2024-03-23T18:07:20.250Z",
+        "is_active": true,
+        "user": 5,
+        "phone": "",
+        "avatar": ""
+    }
+}
+]

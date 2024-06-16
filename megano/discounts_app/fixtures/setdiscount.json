@@ -1,0 +1,44 @@
+[
+{
+  "model": "discounts_app.setdiscount",
+  "pk": 1,
+  "fields": {
+    "created_at": "2024-03-25T09:20:53.816Z",
+    "updated_at": "2024-03-25T09:20:53.816Z",
+    "is_active": true,
+    "name": "Скидка на кондиционер и печь",
+    "description": "Сэкономьте на покупке кондиционера Ballu BSIR/SU-18HN1 и микроволновой печи Samsung MS28K3513AS",
+    "type_of_discount": "per",
+    "amount": "15.00",
+    "product_set": 2
+  }
+},
+{
+  "model": "discounts_app.setdiscount",
+  "pk": 2,
+  "fields": {
+    "created_at": "2024-03-25T09:22:47.729Z",
+    "updated_at": "2024-03-25T09:22:47.729Z",
+    "is_active": true,
+    "name": "Скидка на смартфон и фотоаппар",
+    "description": "Не упустите шанс купить смартфон Samsung Galaxy S23 Ultra и фотоаппарат Fujifilm Instax Mini 11 со скидкой!",
+    "type_of_discount": "per",
+    "amount": "15.00",
+    "product_set": 3
+  }
+},
+{
+  "model": "discounts_app.setdiscount",
+  "pk": 3,
+  "fields": {
+    "created_at": "2024-03-25T09:24:21.889Z",
+    "updated_at": "2024-03-25T09:24:21.889Z",
+    "is_active": true,
+    "name": "Техника для дома и развлечений",
+    "description": "Приобретите наушники Apple AirPods Pro и стиральную машину Indesit XIT8 T2E W по выгодной цене!",
+    "type_of_discount": "fa",
+    "amount": "10000.00",
+    "product_set": 4
+  }
+}
+]

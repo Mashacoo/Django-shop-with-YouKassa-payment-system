@@ -1,0 +1,125 @@
+{% extends 'coreapp/base.html' %}
+{% load static %}
+{% load custom_filters %}
+{% load get_last_price_filter %}
+{% block title %}
+      Seller profile
+{% endblock %}
+
+{% block main %}
+
+    <div class="Middle Middle_top">
+        <div class="Section Section_column Section_columnLeft">
+            <div class="wrap">
+                <div class="Section-column">
+                    <div class="Section-columnSection">
+                        <header class="Section-header">
+                            <strong class="Section-title">Навигация
+                            </strong>
+                        </header>
+                        <div class="Section-columnContent">
+                            <div class="NavigateProfile">
+                                <ul class="menu menu_vt">
+                                    <li class="menu-item_ACTIVE menu-item"><a class="menu-link" href="{% url 'profile_app:seller_profile' pk=seller.pk %}">Личный кабинет</a>
+                                    </li>
+                                    <li class="menu-item"><a class="menu-link" href="{% url 'profile_app:change_seller_profile' pk=seller.pk %}">Профиль</a>
+                                    </li>
+                                    <li class="menu-item"><a class="menu-link" href="#">Административный раздел</a>
+                                    </li>
+                                    <li class="menu-item"><a class="menu-link" href="{% url 'profile_app:profile' pk=request.user.profile.pk %}">Профиль пользователя</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Section-content">
+                    <div class="Account">
+                        <div class="Account-group">
+                            <div class="Account-column">
+                                <div class="Account-avatar">
+                                    {% if seller.logo %}
+                                      <img src="{{ seller.logo.url }}" alt="Avatar">
+                                    {% else %}
+                                    <img src="{% static 'assets/img/content/home/company_logo.jpg' %}" alt="profile.jpg" />
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="Account-column">
+                                <div class="Account-name">
+                                    {% if seller.name %}
+                                        <p>{{ seller.name }}</p>
+                                    {% else %}
+                                        <p>Имя продавца не задано</p>
+                                    {% endif %}
+                                </div>
+                                <div class="Account-column">
+                                    {% if seller.description %}
+                                        <p>{{ seller.description }}</p>
+                                    {% else %}
+                                        <p>Описание компании не задано</p>
+                                    {% endif %}
+                                </div>
+                                <div class="Account-editLink">
+                                <a href="{% url 'profile_app:change_seller_profile' pk=seller.pk %}">
+                                    Редактировать профиль продавца
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Account-group">
+                            <div class="Cards">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            {% for product in products_page %}
+                                <div class="col mb-4">
+                                    <div class="Card border rounded">
+                                        {% with product_image=product|first_image %}
+                                            {% if product_image %}
+                                                <a class="Card-picture" href="{% url 'catalog:product' pk=product.id %}">
+                                                    <img src="{{ product_image.image.url }}" alt="{{ product.title }}" class="img-fluid" />
+                                                </a>
+                                            {% endif %}
+                                        {% endwith %}
+                                        <div class="Card-content p-4">
+                                            <strong class="Card-title">
+                                                <a href="{% url 'catalog:product' pk=product.id %}" class="text-decoration-none text-dark">{{ product.title }}</a>
+                                            </strong>
+                                            <div class="Card-description mt-2">
+                                                <div class="Card-cost">
+                                                    <span class="Card-price">{{ product.pk | get_last_price:seller.pk | price_format }}</span>
+                                                </div>
+                                                <div class="Card-category text-muted">{{ product.category.title }}  {{ product }}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% if forloop.counter|divisibleby:4 %}
+                                    </div><div class="row row-cols-1 row-cols-md-3 g-4">
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                                <div class="Pagination mb-4">
+                        <div class="Pagination-ins">
+                            {% if products_page.has_previous %}
+                                <a class="Pagination-element Pagination-element_prev" href="?page={{ products_page.previous_page_number }}"><img src="/static/assets/img/icons/prevPagination.svg" alt="prevPagination.svg" /></a>
+                            {% else %}
+                                <span class="Pagination-element Pagination-element_prev_disabled"><img src="/static/assets/img/icons/prevPagination.svg" alt="prevPagination.svg" /></span>
+                            {% endif %}
+                            {% for num in products_page.paginator.page_range %}
+                                <a class="Pagination-element{% if num == products_page.number %} Pagination-element_current{% endif %}" href="?page={{ num }}"><span class="Pagination-text">{{ num }}</span></a>
+                            {% endfor %}
+                            {% if products_page.has_next %}
+                                <a class="Pagination-element" href="?page={{ products_page.next_page_number }}"><img src="/static/assets/img/icons/nextPagination.svg" alt="nextPagination.svg" /></a>
+                            {% else %}
+                                <span class="Pagination-element Pagination-element_next_disabled"><img src="/static/assets/img/icons/nextPagination.svg" alt="nextPagination.svg" /></span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

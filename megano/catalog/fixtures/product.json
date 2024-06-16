@@ -1,0 +1,282 @@
+[
+{
+  "model": "catalog.product",
+  "pk": 1,
+  "fields": {
+    "created_at": "2024-03-24T06:20:03.687Z",
+    "updated_at": "2024-03-25T06:53:06.134Z",
+    "is_active": true,
+    "title": "Ballu BSIR/SU-18HN1",
+    "category": 10,
+    "description": "Инверторный кондиционер с Wi-Fi управлением, охлаждением и обогревом.",
+    "is_limited": true,
+    "free_delivery": false
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 2,
+  "fields": {
+    "created_at": "2024-03-24T06:28:03.820Z",
+    "updated_at": "2024-03-24T16:49:59.513Z",
+    "is_active": true,
+    "title": "Electrolux EACM-12EG",
+    "category": 10,
+    "description": "Мобильный кондиционер с 3 режимами работы и таймером.",
+    "is_limited": false,
+    "free_delivery": false
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 3,
+  "fields": {
+    "created_at": "2024-03-24T06:33:00.775Z",
+    "updated_at": "2024-03-24T16:49:53.323Z",
+    "is_active": true,
+    "title": "LG MS2336GK/B3",
+    "category": 6,
+    "description": "Микроволновая печь с грилем и 5 программами приготовления.",
+    "is_limited": true,
+    "free_delivery": true
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 4,
+  "fields": {
+    "created_at": "2024-03-24T06:35:54.589Z",
+    "updated_at": "2024-03-24T16:49:48.718Z",
+    "is_active": true,
+    "title": "Samsung MS28K3513AS",
+    "category": 6,
+    "description": "Микроволновая печь с конвекцией, грилем и 20 программами приготовления.",
+    "is_limited": false,
+    "free_delivery": false
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 5,
+  "fields": {
+    "created_at": "2024-03-24T06:43:55.696Z",
+    "updated_at": "2024-03-24T16:49:32.934Z",
+    "is_active": true,
+    "title": "Xiaomi Redmi 9C NFC",
+    "category": 5,
+    "description": "Смартфон с NFC, 3 камерами и аккумулятором 5000 мАч.",
+    "is_limited": true,
+    "free_delivery": false
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 6,
+  "fields": {
+    "created_at": "2024-03-24T06:46:10.560Z",
+    "updated_at": "2024-03-24T06:48:44.025Z",
+    "is_active": true,
+    "title": "Samsung Galaxy S23 Ultra",
+    "category": 5,
+    "description": "Смартфон с 4 камерами, стилусом S Pen и аккумулятором 5000 мАч.",
+    "is_limited": true,
+    "free_delivery": false
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 7,
+  "fields": {
+    "created_at": "2024-03-24T06:51:18.166Z",
+    "updated_at": "2024-03-25T06:53:39.855Z",
+    "is_active": true,
+    "title": "Sony WH-1000XM5",
+    "category": 2,
+    "description": "Беспроводные наушники с активным шумоподавлением и Hi-Res звуком.",
+    "is_limited": true,
+    "free_delivery": false
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 8,
+  "fields": {
+    "created_at": "2024-03-24T06:53:31.826Z",
+    "updated_at": "2024-03-25T06:53:45.430Z",
+    "is_active": true,
+    "title": "Apple AirPods Pro",
+    "category": 2,
+    "description": "Беспроводные наушники с активным шумоподавлением и пространственным звуком.",
+    "is_limited": true,
+    "free_delivery": true
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 9,
+  "fields": {
+    "created_at": "2024-03-24T10:27:53.583Z",
+    "updated_at": "2024-03-24T16:49:15.880Z",
+    "is_active": true,
+    "title": "Dyson V15 Detect Absolute",
+    "category": 9,
+    "description": "Беспроводной пылесос с лазерным датчиком пыли, LCD-дисплеем и 7 насадками.",
+    "is_limited": true,
+    "free_delivery": true
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 10,
+  "fields": {
+    "created_at": "2024-03-24T10:29:58.519Z",
+    "updated_at": "2024-03-25T06:53:54.820Z",
+    "is_active": true,
+    "title": "Xiaomi Roborock S7 MaxV Ultra",
+    "category": 9,
+    "description": "Робот-пылесос с влажной уборкой, автоматической зарядкой и станцией самоочистки.",
+    "is_limited": true,
+    "free_delivery": true
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 11,
+  "fields": {
+    "created_at": "2024-03-24T10:32:12.800Z",
+    "updated_at": "2024-03-24T16:49:07.089Z",
+    "is_active": true,
+    "title": "LG F4WV308S3E",
+    "category": 3,
+    "description": "Стиральная машина с инверторным мотором, 14 программами и функцией пара.",
+    "is_limited": true,
+    "free_delivery": false
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 12,
+  "fields": {
+    "created_at": "2024-03-24T10:33:52.393Z",
+    "updated_at": "2024-03-24T16:49:03.335Z",
+    "is_active": true,
+    "title": "Electrolux EW6F328Q7IS",
+    "category": 3,
+    "description": "Стиральная машина с 14 программами и функцией отложенного старта.",
+    "is_limited": true,
+    "free_delivery": false
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 13,
+  "fields": {
+    "created_at": "2024-03-24T10:35:49.074Z",
+    "updated_at": "2024-03-25T06:52:52.680Z",
+    "is_active": true,
+    "title": "Samsung UE55TU7000U",
+    "category": 1,
+    "description": "Телевизор с разрешением 4K UHD, HDR и Smart TV.",
+    "is_limited": true,
+    "free_delivery": false
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 14,
+  "fields": {
+    "created_at": "2024-03-24T10:37:29.227Z",
+    "updated_at": "2024-03-24T16:48:45.281Z",
+    "is_active": true,
+    "title": "LG OLED55C1PUB",
+    "category": 1,
+    "description": "Телевизор с разрешением 4K UHD, Dolby Vision и Smart TV.",
+    "is_limited": true,
+    "free_delivery": false
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 15,
+  "fields": {
+    "created_at": "2024-03-24T10:39:31.467Z",
+    "updated_at": "2024-03-24T16:48:38.307Z",
+    "is_active": true,
+    "title": "IKEA Hektar",
+    "category": 7,
+    "description": "Торшер с регулируемой высотой и выключателем на шнуре.",
+    "is_limited": true,
+    "free_delivery": true
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 16,
+  "fields": {
+    "created_at": "2024-03-24T10:43:29.356Z",
+    "updated_at": "2024-03-24T16:48:24.208Z",
+    "is_active": true,
+    "title": "Tefal GV9260E1",
+    "category": 11,
+    "description": "Утюг с парогенератором, постоянным паром и функцией самоочистки.",
+    "is_limited": true,
+    "free_delivery": true
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 17,
+  "fields": {
+    "created_at": "2024-03-24T10:45:00.982Z",
+    "updated_at": "2024-03-24T16:48:13.847Z",
+    "is_active": true,
+    "title": "Fujifilm Instax Mini 11",
+    "category": 4,
+    "description": "Мгновенная фотокамера с автофокусом, селфи-зеркалом и 2 режимами съемки.",
+    "is_limited": true,
+    "free_delivery": false
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 18,
+  "fields": {
+    "created_at": "2024-03-24T10:46:36.358Z",
+    "updated_at": "2024-03-25T06:52:31.487Z",
+    "is_active": true,
+    "title": "Canon PowerShot SX740 HS",
+    "category": 4,
+    "description": "Цифровая фотокамера с 40-кратным оптическим зумом, Wi-Fi и 3-дюймовым экраном.",
+    "is_limited": true,
+    "free_delivery": false
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 19,
+  "fields": {
+    "created_at": "2024-03-24T10:49:53.801Z",
+    "updated_at": "2024-03-24T16:47:31.446Z",
+    "is_active": true,
+    "title": "LG GBP31DSLZN",
+    "category": 8,
+    "description": "Холодильник с No Frost, инверторным компрессором и функцией DoorCooling+.",
+    "is_limited": true,
+    "free_delivery": true
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 20,
+  "fields": {
+    "created_at": "2024-03-24T10:51:14.460Z",
+    "updated_at": "2024-03-25T06:52:18.057Z",
+    "is_active": true,
+    "title": "Indesit XIT8 T2E W",
+    "category": 8,
+    "description": "Двухкамерный холодильник с капельной системой разморозки, низким уровнем шума и ящиком для овощей.",
+    "is_limited": true,
+    "free_delivery": false
+  }
+}
+]

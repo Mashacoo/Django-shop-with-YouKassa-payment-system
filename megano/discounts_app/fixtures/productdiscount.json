@@ -1,0 +1,70 @@
+[
+{
+  "model": "discounts_app.productdiscount",
+  "pk": 1,
+  "fields": {
+    "created_at": "2024-03-25T08:09:15.457Z",
+    "updated_at": "2024-03-25T08:09:15.457Z",
+    "is_active": true,
+    "name": "Скидка 15% на Ballu BSIR/SU-18",
+    "description": "Предложение действует до конца недели! Успейте купить инфракрасный обогреватель Ballu BSIR/SU-18HN1 со скидкой 15%.",
+    "type_of_discount": "per",
+    "amount": "15.00",
+    "product": 1,
+    "seller": [
+      4
+    ]
+  }
+},
+{
+  "model": "discounts_app.productdiscount",
+  "pk": 2,
+  "fields": {
+    "created_at": "2024-03-25T08:11:52.319Z",
+    "updated_at": "2024-03-25T10:31:48.494Z",
+    "is_active": true,
+    "name": "Скидка 10% на Samsung Galaxy",
+    "description": "Станьте обладателем флагманского смартфона Samsung Galaxy S23 Ultra со скидкой 10%!",
+    "type_of_discount": "per",
+    "amount": "10.00",
+    "product": 6,
+    "seller": [
+      3
+    ]
+  }
+},
+{
+  "model": "discounts_app.productdiscount",
+  "pk": 3,
+  "fields": {
+    "created_at": "2024-03-25T08:13:41.726Z",
+    "updated_at": "2024-03-25T09:00:49.120Z",
+    "is_active": true,
+    "name": "Акция на Electrolux EACM-12EG",
+    "description": "В честь наступления весны мы дарим скидку на духовой шкаф Electrolux EACM-12EG! Успейте купить его по выгодной цене!",
+    "type_of_discount": "fa",
+    "amount": "5000.00",
+    "product": 2,
+    "seller": [
+      3
+    ]
+  }
+},
+{
+  "model": "discounts_app.productdiscount",
+  "pk": 7,
+  "fields": {
+    "created_at": "2024-03-25T10:31:53.659Z",
+    "updated_at": "2024-03-25T10:31:53.659Z",
+    "is_active": true,
+    "name": "Скидка 25% на Xiaomi Roborock",
+    "description": "Станьте обладателем флагманского смартфона Xiaomi Roborock S7 MaxV Ultra со скидкой 25%!",
+    "type_of_discount": "per",
+    "amount": "10.00",
+    "product": 10,
+    "seller": [
+      3
+    ]
+  }
+}
+]

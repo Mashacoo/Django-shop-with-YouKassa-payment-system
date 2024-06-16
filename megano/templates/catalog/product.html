@@ -1,0 +1,249 @@
+{% extends "coreapp/base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block main %}
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if ("{{ show_buy_modal }}" === 'True') {
+                document.getElementById('open_buy_modal').style.display = 'block';
+            }
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+            if ("{{ show_review_modal }}" === 'True') {
+                document.getElementById('open_review_modal').style.display = 'block';
+            }
+        });
+    </script>
+    <div id="open_buy_modal" class="my_modal">
+        <div class="my_modal-dialog">
+            <div class="my_modal-content">
+                <div class="my_modal-header">
+                    <p class="my_modal-title">{% translate "Congratulations!" %}</p>
+                    <a href="" title="{% translate 'Close a window' %}" class="close">×</a>
+                </div>
+                <div class="my_modal-body">
+                    <p>{% translate "Product successfully added to cart" %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="open_review_modal" class="my_modal">
+        <div class="my_modal-dialog">
+            <div class="my_modal-content">
+                <div class="my_modal-header">
+                    <p class="my_modal-title">{% translate "Congratulations!" %}</p>
+                    <a href="" title="{% translate 'Close a window' %}" class="close">×</a>
+                </div>
+                <div class="my_modal-body">
+                    <p>{% translate "Your review has been successfully published" %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Middle Middle_top">
+        <div class="Section">
+            <div class="wrap">
+                <div class="Product">
+                    <div class="ProductCard">
+                        <div class="ProductCard-look">
+                            <div class="ProductCard-photo">
+                                {% if product.product_images.first %}
+                                    <img src="{{ product.product_images.first.image.url }}" alt="bigGoods.png" />
+                                {% endif %}
+                            </div>
+                            <div class="ProductCard-picts">
+                                {% for prod_image in product.product_images.all %}
+                                    <a class="ProductCard-pict ProductCard-pict_ACTIVE" href="{{ prod_image.image.url }}">
+                                        <img src="{{ prod_image.image.url }}" alt="bigGoods.png" />
+                                    </a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="ProductCard-desc">
+                            <div class="ProductCard-header">
+                                <h2 class="ProductCard-title">{{ product.title }}
+                                </h2>
+                                <div class="ProductCard-info">
+                                    <div class="ProductCard-cost">
+                                        {% load custom_filters %}
+                                        <div class="ProductCard-price">{{ product.min_price|price_format }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ProductCard-text">{{ product.description }}</div>
+                                <div class="ProductCard-cart">
+                                    <form class="add_to_cart" method="post" id="add_to_cart_form">
+                                        {% csrf_token %}
+                                        <input name="seller_id" type="text" value="{{product.min_price_seller_id}}" style="display: none">
+                                        <div class="ProductCard-cartElement ProductCard-cartElement_amount">
+                                            <div class="Amount Amount_product">
+                                                <button class="Amount-remove" type="button"></button>
+                                                <input class="Amount-input form-input" name="num_products" type="text" value="1" />
+                                                <button class="Amount-add" type="button"></button>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                        <div class="ProductCard-cartElement">
+                                            <button class="btn btn_primary" type="submit">
+                                                <img class="btn-icon" src="{% get_static_prefix %}assets/img/icons/card/cart_white.svg" alt="cart_white.svg" />
+                                                <span class="btn-content">{% translate "Buy" %}</span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            <div class="ProductCard-footer">
+                                <div class="ProductCard-tags">
+                                    <strong class="ProductCard-tagsTitle">{% translate "Tags" %}:
+                                    </strong>
+                                    {% for prod_tag in product.tag.all %}
+                                        <a href="">{{ prod_tag }}</a>,
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Tabs Tabs_default">
+                        <div class="Tabs-links">
+                            <a class="Tabs-link_ACTIVE Tabs-link" href="#description">
+                                <span>{% translate "Description" %}</span>
+                            </a>
+                            <a class="Tabs-link" href="#sellers">
+                                <span>{% translate "Sellers" %}</span>
+                            </a>
+                            <a class="Tabs-link" href="#addit">
+                                <span>{% translate "Characteristic" %}</span>
+                            </a>
+                            <a class="Tabs-link" href="#reviews">
+                                <span>{% translate "Reviews" %}</span>
+                            </a>
+                        </div>
+                        <div class="Tabs-wrap">
+                            <div class="Tabs-block" id="description">
+                                <h2>{{ product.title }}</h2>
+                                <p>{{ product.description }}</p>
+                                <div class="clearfix">
+                                </div>
+                            </div>
+                            <div class="Tabs-block" id="sellers">
+                                <div class="Section-content">
+                                    <div class="Orders">
+                                        {% for price in product.prices.all %}
+                                            <div class="Order Order_anons">
+                                                <div class="Order-personal">
+                                                    <div class="row">
+                                                        <div class="row-block">
+                                                            <a class="Order-title" href="{% url 'profile_app:seller_profile' pk=price.seller.pk %}">
+                                                                {{ price.seller.name }}
+                                                            </a>
+                                                            <p></p>
+                                                                <form class="add_to_cart" method="post" id="add_to_cart_form_from_sellers">
+                                                                    {% csrf_token %}
+                                                                    <input name="seller_id" type="text" value="{{price.seller.id}}" style="display: none"/>
+                                                                    <div class="ProductCard-cartElement ProductCard-cartElement_amount">
+                                                                        <div class="Amount Amount_product">
+                                                                            <button class="Amount-remove" type="button"></button>
+                                                                            <input class="Amount-input form-input" name="num_products" type="text" value="1"/>
+                                                                            <button class="Amount-add" type="button"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <p></p>
+                                                                    <div class="ProductCard-cartElement">
+                                                                        <button class="btn btn_primary" type="submit">
+                                                                            <img class="btn-icon" src="{% get_static_prefix %}assets/img/icons/card/cart_white.svg" alt="cart_white.svg" />
+                                                                            <span class="btn-content">{% translate "Buy" %}</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </form>
+                                                        </div>
+                                                        <div class="row-block">
+                                                            <div class="Order-info Order-info_delivery">
+                                                                <div class="Order-infoType">{% translate "Delivery type" %}:
+                                                                </div>
+                                                                <div class="Order-infoContent">{% translate "Regular delivery" %}
+                                                                </div>
+                                                            </div>
+                                                            <div class="Order-info Order-info_pay">
+                                                                <div class="Order-infoType">{% translate "Payment" %}:
+                                                                </div>
+                                                                <div class="Order-infoContent">{% translate "Online card" %}
+                                                                </div>
+                                                            </div>
+                                                            <div class="Order-info">
+                                                                <div class="Order-infoType">{% translate "Price" %}:
+                                                                </div>
+                                                                <div class="Order-infoContent"><span class="Order-price">{{ price.price|price_format }}</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="Tabs-block" id="addit">
+                                <div class="Product-props">
+                                    {% for characteristic in product.product_characteristics.all %}
+                                        <div class="Product-prop">
+                                            <strong>{{ characteristic.characteristic.title }}
+                                            </strong><span> {{ characteristic.value }}</span>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+
+                            <div class="Tabs-block" id="reviews">
+                                <header class="Section-header">
+                                    <h3 class="Section-title">{{ product.reviews.count }} {% translate "review" %}
+                                    </h3>
+                                </header>
+                                {% for review in product.reviews.all %}
+                                    <div class="Comments">
+                                        <div class="Comment">
+                                            <div class="Comment-column Comment-column_pict">
+                                                <div class="Comment-avatar">
+                                                </div>
+                                            </div>
+                                                <div class="Comment-column">
+                                                    <header class="Comment-header">
+                                                        <div>
+                                                            <strong class="Comment-title">{{ review.author.username }}
+                                                            </strong><span class="Comment-date">{{ review.created_at }}</span>
+                                                        </div>
+                                                    </header>
+                                                    <div class="Comment-content">{{ review.review }}
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                                {% if request.user.is_authenticated %}
+                                    <header class="Section-header Section-header_product">
+                                        <h3 class="Section-title">{% translate "Add review" %}
+                                        </h3>
+                                    </header>
+                                    <div class="Tabs-addComment">
+                                        <form class="form" method="post" id="add_review_to_product">
+                                            {% csrf_token %}
+                                            <div class="form-group">
+                                                <textarea class="form-textarea" name="review" id="review" placeholder="{% translate 'text review' %}"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn btn_muted" type="submit">{% translate "Post review" %}</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

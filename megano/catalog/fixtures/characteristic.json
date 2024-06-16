@@ -1,0 +1,282 @@
+[
+{
+  "model": "catalog.characteristic",
+  "pk": 12,
+  "fields": {
+    "created_at": "2024-03-24T06:19:13.866Z",
+    "updated_at": "2024-03-24T06:19:13.866Z",
+    "is_active": true,
+    "title": "Мощность"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 13,
+  "fields": {
+    "created_at": "2024-03-24T06:19:30.080Z",
+    "updated_at": "2024-03-24T06:19:30.080Z",
+    "is_active": true,
+    "title": "Площадь обслуживания"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 14,
+  "fields": {
+    "created_at": "2024-03-24T06:19:51.972Z",
+    "updated_at": "2024-03-24T06:19:51.972Z",
+    "is_active": true,
+    "title": "Класс энергоэффективности"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 15,
+  "fields": {
+    "created_at": "2024-03-24T06:27:56.290Z",
+    "updated_at": "2024-03-24T06:27:56.290Z",
+    "is_active": true,
+    "title": "Уровень шума"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 16,
+  "fields": {
+    "created_at": "2024-03-24T06:32:30.679Z",
+    "updated_at": "2024-03-24T06:32:30.679Z",
+    "is_active": true,
+    "title": "Объем"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 17,
+  "fields": {
+    "created_at": "2024-03-24T06:32:49.478Z",
+    "updated_at": "2024-03-24T06:32:49.478Z",
+    "is_active": true,
+    "title": "Функция"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 18,
+  "fields": {
+    "created_at": "2024-03-24T06:43:12.253Z",
+    "updated_at": "2024-03-24T06:43:12.253Z",
+    "is_active": true,
+    "title": "Экран"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 19,
+  "fields": {
+    "created_at": "2024-03-24T06:43:32.105Z",
+    "updated_at": "2024-03-24T06:43:32.105Z",
+    "is_active": true,
+    "title": "Процессор"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 20,
+  "fields": {
+    "created_at": "2024-03-24T06:43:47.386Z",
+    "updated_at": "2024-03-24T06:43:47.386Z",
+    "is_active": true,
+    "title": "Память"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 21,
+  "fields": {
+    "created_at": "2024-03-24T06:50:37.791Z",
+    "updated_at": "2024-03-24T06:50:37.791Z",
+    "is_active": true,
+    "title": "Bluetooth"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 22,
+  "fields": {
+    "created_at": "2024-03-24T06:50:49.571Z",
+    "updated_at": "2024-03-24T06:50:49.571Z",
+    "is_active": true,
+    "title": "Время работы"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 23,
+  "fields": {
+    "created_at": "2024-03-24T06:51:04.358Z",
+    "updated_at": "2024-03-24T06:51:08.451Z",
+    "is_active": true,
+    "title": "Поддержка"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 24,
+  "fields": {
+    "created_at": "2024-03-24T06:53:18.305Z",
+    "updated_at": "2024-03-24T06:53:18.305Z",
+    "is_active": true,
+    "title": "Режим"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 25,
+  "fields": {
+    "created_at": "2024-03-24T10:27:37.257Z",
+    "updated_at": "2024-03-24T10:27:37.258Z",
+    "is_active": true,
+    "title": "Фильтр"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 26,
+  "fields": {
+    "created_at": "2024-03-24T10:29:50.076Z",
+    "updated_at": "2024-03-24T10:29:50.076Z",
+    "is_active": true,
+    "title": "Дисплей"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 27,
+  "fields": {
+    "created_at": "2024-03-24T10:31:44.455Z",
+    "updated_at": "2024-03-24T10:31:44.455Z",
+    "is_active": true,
+    "title": "Вместимость"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 28,
+  "fields": {
+    "created_at": "2024-03-24T10:35:29.870Z",
+    "updated_at": "2024-03-24T10:35:29.870Z",
+    "is_active": true,
+    "title": "Частота обновления"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 29,
+  "fields": {
+    "created_at": "2024-03-24T10:35:41.559Z",
+    "updated_at": "2024-03-24T10:35:41.559Z",
+    "is_active": true,
+    "title": "Звук"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 30,
+  "fields": {
+    "created_at": "2024-03-24T10:38:57.433Z",
+    "updated_at": "2024-03-24T10:38:57.433Z",
+    "is_active": true,
+    "title": "Материал абажура"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 31,
+  "fields": {
+    "created_at": "2024-03-24T10:39:13.580Z",
+    "updated_at": "2024-03-24T10:39:13.580Z",
+    "is_active": true,
+    "title": "высота"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 32,
+  "fields": {
+    "created_at": "2024-03-24T10:39:24.379Z",
+    "updated_at": "2024-03-24T10:39:24.379Z",
+    "is_active": true,
+    "title": "мощность лампы"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 33,
+  "fields": {
+    "created_at": "2024-03-24T10:43:10.339Z",
+    "updated_at": "2024-03-24T10:43:10.339Z",
+    "is_active": true,
+    "title": "давление пара"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 34,
+  "fields": {
+    "created_at": "2024-03-24T10:43:20.091Z",
+    "updated_at": "2024-03-24T10:43:20.091Z",
+    "is_active": true,
+    "title": "подошва"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 35,
+  "fields": {
+    "created_at": "2024-03-24T10:46:02.735Z",
+    "updated_at": "2024-03-24T10:46:02.735Z",
+    "is_active": true,
+    "title": "сенсор"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 36,
+  "fields": {
+    "created_at": "2024-03-24T10:46:27.860Z",
+    "updated_at": "2024-03-24T10:46:27.860Z",
+    "is_active": true,
+    "title": "изображение"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 37,
+  "fields": {
+    "created_at": "2024-03-24T10:46:53.019Z",
+    "updated_at": "2024-03-24T10:46:53.019Z",
+    "is_active": true,
+    "title": "Объектив"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 38,
+  "fields": {
+    "created_at": "2024-03-24T10:47:04.202Z",
+    "updated_at": "2024-03-24T10:47:04.202Z",
+    "is_active": true,
+    "title": "фокусное расстояние"
+  }
+},
+{
+  "model": "catalog.characteristic",
+  "pk": 39,
+  "fields": {
+    "created_at": "2024-03-24T10:47:16.564Z",
+    "updated_at": "2024-03-24T10:47:16.564Z",
+    "is_active": true,
+    "title": "формат фото"
+  }
+}
+]

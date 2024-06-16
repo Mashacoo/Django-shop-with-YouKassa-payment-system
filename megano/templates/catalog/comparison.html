@@ -1,0 +1,99 @@
+{% extends 'coreapp/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block main %}
+    <div class="Middle">
+        <div class="wrap">
+            <div class="Product">
+                <div class="ProductCard">
+                    {% if not comparison_list %}
+                        <h1>{% translate "There are no products selected for comparison" %}</h1>
+                    {% endif %}
+
+                    {% for product in comparison_list %}
+                    <div class="ProductCard-desc">
+                        <div class="ProductCard-header">
+                            <h2 class="ProductCard-title">{{ product.title }}
+                            </h2>
+                            <div class="ProductCard-look">
+                                <div class="ProductCard-photo">
+                                    <a href="{{ product.get_absolute_url }}">
+                                        <img src="{{ product.product_images.first.image.url }}" alt="{{ product.title }}" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="Tabs Tabs_default">
+                                <div class="Tabs-wrap">
+                                    <div class="Tabs-block" id="description">
+                                        <div class="table">
+                                            <table>
+                                                <tr>
+                                                    <th class="hed">Характеристика</th>
+                                                    <th class="hed">Значение</th>
+                                                </tr>
+                                                <td><b>Общие параметры</b></td>
+                                                    <td></td>
+                                                {% for characteristic in product.common_characteristics %}
+<!--                                                <td class="comparis">Тип</td> подсветка                                               -->
+                                                <tr>
+                                                    <td>{{ characteristic.characteristic__title }}</td>
+                                                    <td>{{ characteristic.value }}</td>
+                                                </tr>
+                                                {% endfor %}
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="ProductCard-info">
+                            <div class="ProductCard-cost">
+                                {% load custom_filters %}
+                                <div class="ProductCard-price">{{ product.min_price|price_format }}
+                                </div>
+                            </div>
+                        </div>
+                        <p></p>
+                        {% if request.user.is_authenticated %}
+                            <form class="add_to_cart" method="post" id="add_to_cart_form_from_comparison">
+                                {% csrf_token %}
+                                <input name="seller_id" type="text" value="{{ product.min_price_seller_id }}" style="display: none"/>
+                                <input name="product_id" type="text" value="{{ product.pk }}" style="display: none"/>
+                                <div class="ProductCard-cartElement ProductCard-cartElement_amount">
+                                    <div class="Amount Amount_product">
+                                        <button class="Amount-remove" type="button"></button>
+                                        <input class="Amount-input form-input" name="num_products" type="text" value="1"/>
+                                        <button class="Amount-add" type="button"></button>
+                                    </div>
+                                </div>
+                                <p></p>
+                                <div class="ProductCard-cart">
+                                <div class="ProductCard-cartElement">
+                                    <button class="btn btn_primary" type="submit">
+                                        <img class="btn-icon" src="{% get_static_prefix %}assets/img/icons/card/cart_white.svg" alt="cart_white.svg" />
+                                        <span class="btn-content">{% translate "Buy" %}</span>
+                                    </button>
+                                </div>
+                                </div>
+                            </form>
+                            <p></p>
+                            <form method="post" id="remove_product_from_comparison">
+                                {% csrf_token %}
+                                <input name="product_id" type="text" value="{{ product.pk }}" style="display: none"/>
+                                <div class="ProductCard-cartElement">
+                                    <button class="btn btn_primary" type="submit">
+                                        <span class="btn-content">{% translate "Remove" %}</span>
+                                    </button>
+                                </div>
+                            </form>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
